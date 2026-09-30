@@ -7,8 +7,8 @@ from fastapi.responses import HTMLResponse, StreamingResponse, PlainTextResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 
-from services.ai_service import generate_document
-from services.document_service import build_docx, build_pdf, build_txt, extract_terms
+from ai_service import generate_document
+from document_service import build_docx, build_pdf, build_txt, extract_terms
 
 BASE_DIR = Path(__file__).resolve().parent
 
